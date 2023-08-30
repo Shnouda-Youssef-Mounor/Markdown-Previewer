@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Akaya Telivigala", monospace, sans-serif;
+    font-size: 22px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 90vh;
+    width: 100%;
+    text-align: center;
+    background-color: #e3e3e3;
+    padding: 5px 0;
+}
+h1{
+    color: #262834;
+    font-size: 22px;
+    padding: 8px;
+}
+.container{
+    width: 96%;
+    margin: 0 auto;
+    background-color: #080808;
+    padding: 10px 5px 5px 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.btns{
+    display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btns button{
+    padding: 8px;
+    margin: 5px;
+    background-color: #262834;
+    color: #e3e3e3;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-weight: 500;
+}
+.tab-btn:focus{
+
+   background-color: blue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+    width: calc(100% - 10px);
+    height: calc(100vh - 150px);
+    border: none;
+    outline: none;
+    background-color: #121212;
+    resize: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #e3e3e3;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px 5px 0px 5px;
+    letter-spacing: 0.2px;
+    font-family: monospace, sans-serif;
+    font-size: 20px;
 }
